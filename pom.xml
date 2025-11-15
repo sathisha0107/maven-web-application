@@ -1,12 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mt</groupId>
     <artifactId>maven-web-application</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
+    <version>0.0.1-SNAPSHOT</version>
 
     <name>maven-web-application</name>
     <description>Maven Web Project for Java Project</description>
@@ -14,7 +15,6 @@
     <properties>
         <jdk.version>17</jdk.version>
         <spring.version>5.1.2.RELEASE</spring.version>
-        <junit.version>4.13.2</junit.version>
     </properties>
 
     <dependencies>
@@ -30,7 +30,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
+            <version>4.13.2</version>
             <scope>test</scope>
         </dependency>
 
@@ -42,7 +42,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Jakarta Servlet API (REQUIRED for Tomcat 10.x) -->
+        <!-- SERVLET API — REQUIRED FOR TOMCAT 10 -->
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
@@ -50,22 +50,25 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Spring Dependencies -->
+        <!-- SPRING DEPENDENCIES -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
@@ -79,7 +82,7 @@
 
         <plugins>
 
-            <!-- Java Compiler Plugin -->
+            <!-- Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -87,16 +90,6 @@
                 <configuration>
                     <source>${jdk.version}</source>
                     <target>${jdk.version}</target>
-                </configuration>
-            </plugin>
-
-            <!-- WAR Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.2</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
 
