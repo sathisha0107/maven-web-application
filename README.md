@@ -5,7 +5,7 @@
 ![AWS](https://img.shields.io/badge/Cloud-AWS-orange.svg)
 ![CI/CD](https://img.shields.io/badge/CI%2FCD-Jenkins-yellowgreen.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange.svg)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange.svg)    
 
 ![Maven Logo](https://maven.apache.org/images/maven-logo-black-on-white.png)
 
